@@ -21,7 +21,7 @@ public final class ListModels {
         models.forEach(
                 (app, list) -> {
                     String appName = app.toString();
-                    list.forEach(artifact -> logger.info("{} {}", appName, artifact));
+                    list.forEach(artifact -> System.out.println(appName + artifact));
                 });
     }
 }
