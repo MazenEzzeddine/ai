@@ -34,7 +34,9 @@ public final class ObjectDetection {
 
     public static DetectedObjects predict() throws IOException, ModelException, TranslateException {
         Path imageFile = Paths.get("dog_bike_car.jpg");
-        Image img = ImageFactory.getInstance().fromFile(imageFile);
+        //Image img = ImageFactory.getInstance().fromFile(imageFile);
+
+        Image img  =  ImageFactory.getInstance().fromUrl("https://avatars.mds.yandex.net/get-altay/5232541/2a00000182018441ccb7070a32ddd1d6de05/XXL");
 
         Criteria<Image, DetectedObjects> criteria =
                 Criteria.builder()
